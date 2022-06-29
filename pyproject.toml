@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "quote_monitor"
+version = "0.1.0"
+description = ""
+authors = ["ignatyevds"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.78.0"}
+aiohttp = {extras = ["speedups"], version = "^3.8.1"}
+uvicorn = {extras = ["standard"], version = "^0.17.6"}
+fastapi-users = {extras = ["sqlalchemy"], version = "^10.1.1"}
+psycopg2-binary = "^2.9.3"
+aiologger = "^0.6.1"
+alembic = "^1.8.0"
+
+[tool.poetry.dev-dependencies]
+manage-fastapi = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
